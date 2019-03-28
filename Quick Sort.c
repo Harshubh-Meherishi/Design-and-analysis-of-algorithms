@@ -33,7 +33,7 @@ void quicksort(int A[],int low,int high)
     }
 }
 
-void partition(int A[],int low,int high)
+int partition(int A[],int low,int high)
 {
     int i,j;
     i=low;
@@ -57,5 +57,6 @@ void partition(int A[],int low,int high)
         }
     A[low]=A[j];
     A[j]=p;
+        return j;
     }
 }
